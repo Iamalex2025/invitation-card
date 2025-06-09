@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <title>Приглашение</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Подключение локального шрифта -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <h1>Создать приглашение</h1>
+
+  <div class="form-group">
+    <label for="names">Имя(я) именинника(цы) в родительном падеже:</label>
+    <input type="text" id="names" placeholder="Например: Александра Анны" />
+  </div>
+
+  <div class="form-group">
+    <label for="date">Дата праздника:</label>
+    <input type="text" id="date" placeholder="Например: 10 августа" />
+  </div>
+
+  <div class="form-group">
+    <label for="time">Время праздника:</label>
+    <input type="text" id="time" placeholder="Например: 18:00" />
+  </div>
+
+  <canvas id="previewCanvas" width="1410" height="2000"></canvas>
+  <button onclick="downloadImage()">Скачать изображение</button>
+
+  <script src="script.js" defer></script>
+
+</body>
+</html>
